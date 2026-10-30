@@ -1,0 +1,63 @@
+ :root {
+  --primary: #3fbbc0;
+  --dark: #2c4964;
+  --muted: #6c7a89;
+  --light: #f7fcfc;
+}
+* { scroll-behavior: smooth; }
+body { font-family: 'Roboto', sans-serif; color: #444; }
+h1,h2,h3,h4,h5,.navbar-brand { font-family: 'Poppins', sans-serif; }
+.site-header { box-shadow: 0 2px 18px rgba(44,73,100,.08); }
+.navbar { min-height: 76px; }
+.navbar-brand { color: var(--dark); font-size: 30px; font-weight: 700; letter-spacing: .3px; }
+.navbar-brand span { color: var(--primary); }
+.nav-link { color: var(--dark); font-weight: 500; margin: 0 7px; }
+.nav-link:hover,.nav-link.active { color: var(--primary); }
+.btn-primary { background: var(--primary); border-color: var(--primary); }
+.btn-primary:hover { background: #35a9ae; border-color: #35a9ae; }
+.btn-outline-primary { color: var(--primary); border-color: var(--primary); }
+.btn-outline-primary:hover { background: var(--primary); border-color: var(--primary); }
+.hero-section { background: linear-gradient(110deg,rgba(247,252,252,.97),rgba(232,248,248,.88)); }
+.min-vh-75 { min-height: 590px; }
+.hero-content { padding-top: 70px; padding-bottom: 70px; }
+.eyebrow,.section-heading span { color: var(--primary); font-size: 13px; font-weight: 700; letter-spacing: 1.5px; }
+.hero-content h1 { color: var(--dark); font-size: clamp(36px,5vw,56px); line-height: 1.2; font-weight: 700; margin: 18px 0; }
+.hero-content h1 span { color: var(--primary); }
+.hero-content p { color: var(--muted); max-width: 580px; margin-bottom: 28px; }
+.hero-card { background: white; border-radius: 18px; padding: 42px; box-shadow: 0 15px 45px rgba(44,73,100,.12); text-align: center; }
+.hero-icon { width: 110px; height: 110px; border-radius: 50%; background: #e5f7f7; color: var(--primary); display: grid; place-items: center; font-size: 55px; margin: 0 auto 24px; }
+.hero-card h3 { color: var(--dark); font-weight: 600; }
+.hero-card p { color: var(--muted); }
+.hero-stat { color: var(--primary); font-weight: 500; }
+.section-padding { padding: 78px 0; }
+.section-heading { margin-bottom: 42px; }
+.section-heading h2 { color: var(--dark); font-weight: 700; margin: 10px 0; }
+.section-heading p { color: var(--muted); }
+.service-card { padding: 32px 26px; border-radius: 12px; background: white; box-shadow: 0 4px 28px rgba(44,73,100,.08); transition: .25s; }
+.service-card:hover,.product-card:hover { transform: translateY(-5px); }
+.service-card i { font-size: 38px; color: var(--primary); }
+.service-card h4 { color: var(--dark); font-size: 19px; margin: 18px 0 10px; }
+.service-card p,.product-card p { color: var(--muted); line-height: 1.6; margin-bottom: 0; }
+.products-section { background: var(--light); }
+.product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 25px rgba(44,73,100,.07); transition: .25s; }
+.product-icon { height: 145px; display: grid; place-items: center; background: #e8f8f8; color: var(--primary); font-size: 58px; }
+.product-body { padding: 22px; }
+.product-category { color: var(--primary); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; }
+.product-body h5 { color: var(--dark); font-size: 17px; margin: 9px 0; }
+.product-body p { min-height: 72px; font-size: 14px; }
+.product-price { color: var(--dark); font-weight: 700; margin-top: 16px; }
+.api-section { background: white; }
+.api-section h2 { color: var(--dark); font-weight: 700; margin: 12px 0; }
+.api-section p { color: var(--muted); }
+.api-link { display: flex; align-items: center; gap: 14px; background: #f5fafa; padding: 15px 18px; border-radius: 8px; margin-bottom: 12px; }
+.api-link span { background: #dff5eb; color: #198754; font-size: 11px; font-weight: 700; padding: 5px 8px; border-radius: 4px; }
+.api-link code { color: var(--dark); flex: 1; }
+.api-link a { color: var(--primary); font-weight: 600; text-decoration: none; }
+.footer-section { background: #f1fafa; color: var(--muted); }
+.brand-footer { color: var(--dark); font-weight: 700; }
+@media (max-width: 767px) {
+  .min-vh-75 { min-height: auto; }
+  .hero-content { padding-top: 75px; padding-bottom: 75px; }
+  .section-padding { padding: 58px 0; }
+  .api-link { gap: 8px; }
+}
